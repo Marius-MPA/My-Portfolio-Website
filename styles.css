@@ -703,8 +703,13 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
-    .services__container,
-    .works__container {
+    .services__container { 
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .works__container { 
         grid-template-columns: repeat(3, 1fr);
     }
 }
